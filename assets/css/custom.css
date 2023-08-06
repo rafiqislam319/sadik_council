@@ -1,0 +1,196 @@
+/* Home page consultation button */
+.request-consultation {
+  position: relative;
+  background: var(--primary-color);
+  border-radius: 7px;
+  font-size: 16px;
+}
+.request-consultation::after {
+  content: "";
+  position: absolute;
+  bottom: -15px; /* Adjust this value to control the arrow position */
+  left: 15%; /* Position the arrow in the middle horizontally */
+  transform: translateX(-50%) rotate(-45deg);
+  border-width: 15px 0 0 40px; /* Creates a triangle */
+  border-style: solid;
+  border-color: var(--primary-color) transparent transparent transparent;
+}
+.request-consultation:hover{
+  background: var(--primary-color);
+}
+#hero-area{
+  margin-bottom: 80px;
+}
+/* Home page consultation button ends */
+
+
+/* Navbar button hover css */
+.main-navbar ul li a:hover{
+    /* color: var(--primary-color);
+    transition: var(--secondary-transition); */
+    position: relative;
+    /* background: var(--primary-color); */
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 7px;
+}
+.main-navbar ul li a:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -9px; /* Adjust this value to control the arrow position */
+    left: 95%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-50%) rotate(-155deg);
+    border-width: 5px 0 0 25px; /* Creates a triangle */
+    border-style: solid;
+    border-color: var(--primary-color) transparent transparent transparent;
+}
+/* Navbar button hover css ends*/
+
+
+/* service page css */
+.service-vline {
+    border-left: 6px solid #585A5C;
+    height: 1500px;
+  }
+
+  #left-service .single-service{
+    position: relative;
+  }
+  #left-service .single-service::after{
+    content: "";
+    position: absolute;
+    bottom: -9px; /* Adjust this value to control the arrow position */
+    left: 95%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-50%) rotate(-155deg);
+    border-width: 25px 0 0 180px; /* Creates a triangle */
+    border-style: solid;
+    border-color: #E5E6E7 transparent transparent transparent;
+    
+  }
+
+  #left-service .single-service:hover{
+    position: relative;
+  }
+
+  #left-service .single-service:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -9px; /* Adjust this value to control the arrow position */
+    left: 95%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-50%) rotate(-155deg);
+    border-width: 25px 0 0 180px; /* Creates a triangle */
+    border-style: solid;
+    /* border-color: var(--primary-color); */
+    border-color: var(--primary-color) transparent transparent transparent;
+    transition: var(--primary-transition);
+  }
+
+
+  #right-service .single-service{
+    position: relative;
+  }
+  #right-service .single-service::after{
+    content: "";
+    position: absolute;
+    bottom: -9px; /* Adjust this value to control the arrow position */
+    right: 57%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-50%) rotate(-38deg);
+    border-width: 25px 0 0 188px; /* Creates a triangle */
+    border-style: solid;
+    border-color: #E5E6E7 transparent transparent transparent;
+  }
+
+  #right-service .single-service:hover{
+    position: relative;
+  }
+
+  #right-service .single-service:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -9px; /* Adjust this value to control the arrow position */
+    right: 57%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-50%) rotate(-38deg);
+    border-width: 25px 0 0 188px; /* Creates a triangle */
+    border-style: solid;
+    /* border-color: var(--primary-color); */
+    border-color: var(--primary-color) transparent transparent transparent;
+    transition: var(--primary-transition);
+  }
+  /* service page css ends */
+
+
+  /* team page css */
+  /* #team-left{
+    padding-right: 20px;
+  } */
+  .team-vline {
+    border-left: 6px solid #585A5C;
+    height: 500px;
+  }
+  
+
+  #team-left .single-member{
+    position: relative;
+  }
+  #team-left .single-member::after{
+    content: "";
+    position: absolute;
+    bottom: -14px; /* Adjust this value to control the arrow position */
+    left: 98%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-50%) rotate(-164deg);
+    border-width: 25px 0 0 129px; /* Creates a triangle */
+    border-style: solid;
+    border-color: #E5E6E7 transparent transparent transparent;
+  }
+
+  #team-left .single-member:hover{
+    position: relative;
+  }
+
+  #team-left .single-member:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -14px; /* Adjust this value to control the arrow position */
+    left: 98%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-50%) rotate(-164deg);
+    border-width: 25px 0 0 129px; /* Creates a triangle */
+    border-style: solid;
+    /* border-color: var(--primary-color); */
+    border-color: var(--primary-color) transparent transparent transparent;
+    transition: var(--primary-transition);
+  }
+
+
+  #team-right .single-member{
+    position: relative;
+  }
+  #team-right .single-member::after{
+    content: "";
+    position: absolute;
+    bottom: -22px; /* Adjust this value to control the arrow position */
+    right: 72%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-50%) rotate(-31deg);
+    border-width: 25px 0 0 129px; /* Creates a triangle */
+    border-style: solid;
+    border-color: #E5E6E7 transparent transparent transparent;
+  }
+  #team-right .single-member:hover{
+    position: relative;
+  }
+
+  #team-right .single-member:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -22px; /* Adjust this value to control the arrow position */
+    right: 72%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-50%) rotate(-31deg);
+    border-width: 25px 0 0 129px; /* Creates a triangle */
+    border-style: solid;
+    /* border-color: var(--primary-color); */
+    border-color: var(--primary-color) transparent transparent transparent;
+    transition: var(--primary-transition);
+  }
+  #team-content-area{
+    margin-bottom: 60px;
+  }
+  /* team page css ends */

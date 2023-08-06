@@ -51,71 +51,6 @@ body{
 .main-navbar ul li button ion-icon{
     font-size: 22px;
 }
-.main-navbar ul li a:hover{
-    /* color: var(--primary-color);
-    transition: var(--secondary-transition); */
-    position: relative;
-    /* background: var(--primary-color); */
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    border-radius: 7px;
-}
-.main-navbar ul li a:hover::after{
-    content: "";
-    position: absolute;
-    bottom: -9px; /* Adjust this value to control the arrow position */
-    left: 95%; /* Position the arrow in the middle horizontally */
-    transform: translateX(-50%) rotate(-155deg);
-    border-width: 5px 0 0 25px; /* Creates a triangle */
-    border-style: solid;
-    border-color: var(--primary-color) transparent transparent transparent;
-}
-
-
-.sevice-vline {
-    border-left: 6px solid #585A5C;
-    height: 1500px;
-  }
-
-  #left-service .single-service{
-    position: relative;
-  }
-  #left-service .single-service::after{
-    content: "";
-    position: absolute;
-    bottom: -9px; /* Adjust this value to control the arrow position */
-    left: 95%; /* Position the arrow in the middle horizontally */
-    transform: translateX(-50%) rotate(-155deg);
-    border-width: 15px 0 0 55px; /* Creates a triangle */
-    border-style: solid;
-    border-color: #E5E6E7 transparent transparent transparent;
-  }
-
-  #left-service .single-service:hover{
-    position: relative;
-  }
-
-  #left-service .single-service:hover:after{
-    content: "";
-    position: absolute;
-    bottom: -9px; /* Adjust this value to control the arrow position */
-    left: 95%; /* Position the arrow in the middle horizontally */
-    transform: translateX(-50%) rotate(-155deg);
-    border-width: 15px 0 0 55px; /* Creates a triangle */
-    border-style: solid;
-    border-color: var(--primary-color);
-  }
-
-
-
-
-
-
-
-
-
-
-
 
 .main-navbar ul li button.btn:active{
     border: none !important;
@@ -136,25 +71,6 @@ body{
 }
 .hero-description p{
     font-weight: 300;
-}
-.request-consultation {
-    position: relative;
-    background: var(--primary-color);
-    border-radius: 7px;
-    font-size: 16px;
-}
-.request-consultation::after {
-    content: "";
-    position: absolute;
-    bottom: -15px; /* Adjust this value to control the arrow position */
-    left: 15%; /* Position the arrow in the middle horizontally */
-    transform: translateX(-50%) rotate(-45deg);
-    border-width: 15px 0 0 40px; /* Creates a triangle */
-    border-style: solid;
-    border-color: var(--primary-color) transparent transparent transparent;
-}
-.request-consultation:hover{
-    background: var(--primary-color);
 }
 
 .hero-right {
@@ -223,7 +139,7 @@ body{
     background: #E5E6E7;
     border-radius: 1rem;
     margin: 40px 0;
-    padding: 30px 15px;
+    padding: 30px 15px !important;
     box-shadow: var(--shadow-md);
 }
 .single-service:hover{
