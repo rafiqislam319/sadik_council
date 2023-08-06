@@ -25,25 +25,7 @@
 
 
 /* Navbar button hover css */
-.main-navbar ul li a:hover{
-    /* color: var(--primary-color);
-    transition: var(--secondary-transition); */
-    position: relative;
-    /* background: var(--primary-color); */
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    border-radius: 7px;
-}
-.main-navbar ul li a:hover::after{
-    content: "";
-    position: absolute;
-    bottom: -9px; /* Adjust this value to control the arrow position */
-    left: 95%; /* Position the arrow in the middle horizontally */
-    transform: translateX(-50%) rotate(-155deg);
-    border-width: 5px 0 0 25px; /* Creates a triangle */
-    border-style: solid;
-    border-color: var(--primary-color) transparent transparent transparent;
-}
+
 /* Navbar button hover css ends*/
 
 
@@ -116,13 +98,18 @@
     border-color: var(--primary-color) transparent transparent transparent;
     transition: var(--primary-transition);
   }
+  .service_h_line{
+    border-bottom: 6px solid #585A5C;
+   width: 80px;
+   margin: auto;
+ }
+ #service-content-area{
+  margin-bottom: 60px;
+}
   /* service page css ends */
 
 
   /* team page css */
-  /* #team-left{
-    padding-right: 20px;
-  } */
   .team-vline {
     border-left: 6px solid #585A5C;
     height: 500px;
@@ -145,6 +132,11 @@
 
   #team-left .single-member:hover{
     position: relative;
+  }
+  .team_h_line{
+     border-bottom: 6px solid #585A5C;
+    width: 80px;
+    margin: auto;
   }
 
   #team-left .single-member:hover::after{
@@ -194,3 +186,55 @@
     margin-bottom: 60px;
   }
   /* team page css ends */
+
+
+/* about page css */
+  .about_vline{
+    border-left: 5px solid #585A5C;
+     height: 30px;
+     margin: 0 auto;
+     width: 2px;
+ }
+ .about_hline{
+  border-bottom: 6px solid #585A5C;
+    width: 80px;
+    margin: auto;
+  
+}
+ /* about page css ends */
+
+ 
+ /* nav menu css */
+ .nav-item:hover {
+  border: 2px solid var(--primary-color);
+  background: #fff;
+  /* width: 200px; */
+  position: relative;
+  color: var(--primary-color);
+}
+.nav-item .nav-link {
+  padding: 5px;
+}
+
+.nav-item:hover::before {
+  position: absolute;
+  content: "";
+  border: 11px solid;
+  border-color: var(--primary-color) var(--primary-color) transparent transparent;
+  /* bottom: 20px; */
+  left: auto;
+  right: 37px;
+  bottom: -23px;
+}
+.nav-item:hover::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 38px;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: #fff #fff transparent transparent;
+}
+ /* nav menu css ends */
