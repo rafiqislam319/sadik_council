@@ -23,12 +23,6 @@
 }
 /* Home page consultation button ends */
 
-
-/* Navbar button hover css */
-
-/* Navbar button hover css ends*/
-
-
 /* service page css */
 .service-vline {
     border-left: 6px solid #585A5C;
@@ -227,10 +221,8 @@
  .nav-item:hover {
   border: 2px solid var(--primary-color);
   background: #fff;
-  /* width: 200px; */
   position: relative;
   color: var(--primary-color) transparent;
-  /* border: transparent; */
 }
 li.nav-item {
   border: 2px solid transparent;
@@ -254,11 +246,9 @@ li.nav-item.navbar-brand {
   content: "";
   border: 12px solid;
   border-color: var(--primary-color) var(--primary-color) transparent transparent;
-  /* bottom: 20px; */
   left: auto;
   right: 36px;
   bottom: -25px;
-  
 }
 .nav-item:hover::after {
   content: " ";
@@ -291,42 +281,91 @@ li.nav-item.navbar-brand {
 /* Media query */
 /* for service page */
  @media only screen and (min-width: 991px) {
-  #right-service .single-service{
-    position: relative;
+
+  .service-vline {
+    height: 1550px;
+  }
+  #left-service .single-service::after{
+
+    bottom: -16px; /* Adjust this value to control the arrow position */
+    left: 96%; /* Position the arrow in the middle horizontally */
+    border-width: 50px 0 0 212px; /* Creates a triangle */
+  }
+  #left-service .single-service:hover::after{
+
+    bottom: -16px; /* Adjust this value to control the arrow position */
+    left: 96%; /* Position the arrow in the middle horizontally */
+    
   }
   #right-service .single-service::after{
-    content: "";
-    position: absolute;
     bottom: -35px; /* Adjust this value to control the arrow position */
     right: 292px; /* Position the arrow in the middle horizontally */
-    transform: translateX(-54%) rotate(-36deg);
     border-width: 45px 0 0 207px; /* Creates a triangle */
-    border-style: solid;
-    border-color: #E5E6E7 transparent transparent transparent;
-    z-index: -1;
   }
   .service_h_line{
-    border-bottom: 6px solid #585A5C;
-   width: 80px;
    margin-right: 660px;
  }
 
- #right-service .single-service:hover{
-  position: relative;
-}
-
 #right-service .single-service:hover::after{
-  content: "";
-  position: absolute;
   bottom: -35px; /* Adjust this value to control the arrow position */
   right: 292px; /* Position the arrow in the middle horizontally */
-  transform: translateX(-54%) rotate(-36deg);
   border-width: 45px 0 0 207px; /* Creates a triangle */
-  border-style: solid;
-  border-color: var(--primary-color) transparent transparent transparent;
-  transition: var(--primary-transition);
 }
+
+
+/* for team page */
+.team-vline {
+  height: 600px;
 }
-/* for service page ends */
+
+#team-right .single-member::after{
+
+  bottom: -39px; /* Adjust this value to control the arrow position */
+  right: 74%; /* Position the arrow in the middle horizontally */
+
+}
+
+#team-right .single-member:hover::after{
+
+  bottom: -39px; /* Adjust this value to control the arrow position */
+  right: 74%; /* Position the arrow in the middle horizontally */
+  
+}
+#team-left .single-member::after{
+
+  bottom: -15px; /* Adjust this value to control the arrow position */
+  left: 99%; /* Position the arrow in the middle horizontally */
+}
+
+#team-left .single-member:hover::after{
+  bottom: -15px; /* Adjust this value to control the arrow position */
+  left: 99%; /* Position the arrow in the middle horizontally */
+}
+/* for team page ends*/
+
+/* for nav menu bar */
+
+.nav-item:hover::after {
+  right: 39px;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  body{
+    background-color: red;
+  }
+
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body{
+    background-color: rgb(91, 224, 29);
+  }
+
+}
+
 /* Media query Ends */
 
