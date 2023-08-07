@@ -32,39 +32,45 @@
 /* service page css */
 .service-vline {
     border-left: 6px solid #585A5C;
-    height: 1500px;
+    height: 1700px;
   }
 
   #left-service .single-service{
     position: relative;
+    
   }
   #left-service .single-service::after{
     content: "";
     position: absolute;
-    bottom: -9px; /* Adjust this value to control the arrow position */
+    bottom: -12px; /* Adjust this value to control the arrow position */
     left: 95%; /* Position the arrow in the middle horizontally */
-    transform: translateX(-50%) rotate(-155deg);
-    border-width: 25px 0 0 180px; /* Creates a triangle */
+    transform: translateX(-56%) rotate(-157deg);
+    border-width: 50px 0 0 212px; /* Creates a triangle */
     border-style: solid;
     border-color: #E5E6E7 transparent transparent transparent;
+    z-index: -1;
     
   }
 
   #left-service .single-service:hover{
     position: relative;
   }
+  .single-service{
+    box-shadow: 4px -6px 6px #eee;
+  }
 
   #left-service .single-service:hover::after{
     content: "";
     position: absolute;
-    bottom: -9px; /* Adjust this value to control the arrow position */
+    bottom: -12px; /* Adjust this value to control the arrow position */
     left: 95%; /* Position the arrow in the middle horizontally */
-    transform: translateX(-50%) rotate(-155deg);
-    border-width: 25px 0 0 180px; /* Creates a triangle */
+    transform: translateX(-56%) rotate(-157deg);
+    border-width: 50px 0 0 212px; /* Creates a triangle */
     border-style: solid;
     /* border-color: var(--primary-color); */
     border-color: var(--primary-color) transparent transparent transparent;
     transition: var(--primary-transition);
+    
   }
 
 
@@ -74,10 +80,10 @@
   #right-service .single-service::after{
     content: "";
     position: absolute;
-    bottom: -9px; /* Adjust this value to control the arrow position */
-    right: 57%; /* Position the arrow in the middle horizontally */
-    transform: translateX(-50%) rotate(-38deg);
-    border-width: 25px 0 0 188px; /* Creates a triangle */
+    bottom: -31px; /* Adjust this value to control the arrow position */
+    right: 48%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-54%) rotate(-36deg);
+    border-width: 45px 0 0 207px; /* Creates a triangle */
     border-style: solid;
     border-color: #E5E6E7 transparent transparent transparent;
   }
@@ -89,10 +95,10 @@
   #right-service .single-service:hover::after{
     content: "";
     position: absolute;
-    bottom: -9px; /* Adjust this value to control the arrow position */
-    right: 57%; /* Position the arrow in the middle horizontally */
-    transform: translateX(-50%) rotate(-38deg);
-    border-width: 25px 0 0 188px; /* Creates a triangle */
+    bottom: -31px; /* Adjust this value to control the arrow position */
+    right: 48%; /* Position the arrow in the middle horizontally */
+    transform: translateX(-54%) rotate(-36deg);
+    border-width: 45px 0 0 207px; /* Creates a triangle */
     border-style: solid;
     /* border-color: var(--primary-color); */
     border-color: var(--primary-color) transparent transparent transparent;
@@ -105,6 +111,12 @@
  }
  #service-content-area{
   margin-bottom: 60px;
+}
+#left-service .single-service{
+  margin-bottom: 70px;
+}
+#right-service .single-service{
+  margin-bottom: 70px;
 }
   /* service page css ends */
 
@@ -125,7 +137,7 @@
     bottom: -14px; /* Adjust this value to control the arrow position */
     left: 98%; /* Position the arrow in the middle horizontally */
     transform: translateX(-50%) rotate(-164deg);
-    border-width: 25px 0 0 129px; /* Creates a triangle */
+    border-width: 45px 0 0 129px; /* Creates a triangle */
     border-style: solid;
     border-color: #E5E6E7 transparent transparent transparent;
   }
@@ -145,7 +157,7 @@
     bottom: -14px; /* Adjust this value to control the arrow position */
     left: 98%; /* Position the arrow in the middle horizontally */
     transform: translateX(-50%) rotate(-164deg);
-    border-width: 25px 0 0 129px; /* Creates a triangle */
+    border-width: 45px 0 0 129px; /* Creates a triangle */
     border-style: solid;
     /* border-color: var(--primary-color); */
     border-color: var(--primary-color) transparent transparent transparent;
@@ -159,12 +171,13 @@
   #team-right .single-member::after{
     content: "";
     position: absolute;
-    bottom: -22px; /* Adjust this value to control the arrow position */
-    right: 72%; /* Position the arrow in the middle horizontally */
+    bottom: -37px; /* Adjust this value to control the arrow position */
+    right: 68%; /* Position the arrow in the middle horizontally */
     transform: translateX(-50%) rotate(-31deg);
-    border-width: 25px 0 0 129px; /* Creates a triangle */
+    border-width: 45px 0 0 139px; /* Creates a triangle */
     border-style: solid;
     border-color: #E5E6E7 transparent transparent transparent;
+    z-index: -1;
   }
   #team-right .single-member:hover{
     position: relative;
@@ -173,10 +186,10 @@
   #team-right .single-member:hover::after{
     content: "";
     position: absolute;
-    bottom: -22px; /* Adjust this value to control the arrow position */
-    right: 72%; /* Position the arrow in the middle horizontally */
+    bottom: -37px; /* Adjust this value to control the arrow position */
+    right: 68%; /* Position the arrow in the middle horizontally */
     transform: translateX(-50%) rotate(-31deg);
-    border-width: 25px 0 0 129px; /* Creates a triangle */
+    border-width: 45px 0 0 139px; /* Creates a triangle */
     border-style: solid;
     /* border-color: var(--primary-color); */
     border-color: var(--primary-color) transparent transparent transparent;
@@ -210,21 +223,36 @@
   background: #fff;
   /* width: 200px; */
   position: relative;
-  color: var(--primary-color);
+  color: var(--primary-color) transparent;
+  /* border: transparent; */
+}
+li.nav-item {
+  border: 2px solid transparent;
 }
 .nav-item .nav-link {
-  padding: 5px;
+  padding: 10px;
 }
-
+/* to make menu item no shake */
+li.nav-item.navbar-brand {
+  border: transparent;
+}
+/* to make Home item no border */
+#home-li{
+  border: none;
+}
+#home-li:hover::before{
+  border: none;
+}
 .nav-item:hover::before {
   position: absolute;
   content: "";
-  border: 11px solid;
+  border: 12px solid;
   border-color: var(--primary-color) var(--primary-color) transparent transparent;
   /* bottom: 20px; */
   left: auto;
-  right: 37px;
-  bottom: -23px;
+  right: 36px;
+  bottom: -25px;
+  
 }
 .nav-item:hover::after {
   content: " ";
@@ -236,9 +264,19 @@
   bottom: -20px;
   border: 12px solid;
   border-color: #fff #fff transparent transparent;
+  
 }
  /* nav menu css ends */
 
  #main-menu-area{
   padding-bottom: 50px;
  }
+ #footer-area{
+  margin-top: 100px;
+ }
+
+ #blogs-section{
+  margin-bottom: 50px;
+  margin-top: 100px;
+ }
+
