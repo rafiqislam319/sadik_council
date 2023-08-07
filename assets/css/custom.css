@@ -87,6 +87,7 @@
     border-width: 45px 0 0 207px; /* Creates a triangle */
     border-style: solid;
     border-color: #E5E6E7 transparent transparent transparent;
+    z-index: -1;
   }
 
   #right-service .single-service:hover{
