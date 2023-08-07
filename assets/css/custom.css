@@ -58,6 +58,7 @@
   .single-service{
     box-shadow: 4px -6px 6px #eee;
   }
+  
 
   #left-service .single-service:hover::after{
     content: "";
@@ -124,7 +125,7 @@
   /* team page css */
   .team-vline {
     border-left: 6px solid #585A5C;
-    height: 500px;
+    height: 550px;
   }
   
 
@@ -197,6 +198,10 @@
   }
   #team-content-area{
     margin-bottom: 60px;
+  }
+  .single-member{
+    box-shadow: 4px -6px 6px #eee;
+    margin-bottom: 70px;
   }
   /* team page css ends */
 
