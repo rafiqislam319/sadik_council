@@ -1,3 +1,11 @@
+/* Home page */
+#hm_sbtitle{
+  color: #8E8E8E;
+}
+#btn_home{
+  box-shadow: -1px -1px 8px var(--primary-color);
+  
+ } 
 /* Home page consultation button */
 .request-consultation {
   position: relative;
@@ -14,6 +22,7 @@
   border-width: 15px 0 0 40px; /* Creates a triangle */
   border-style: solid;
   border-color: var(--primary-color) transparent transparent transparent;
+  box-shadow: 1px -1px 1px var(--primary-color);
 }
 .request-consultation:hover{
   background: var(--primary-color);
@@ -276,6 +285,18 @@ li.nav-item.navbar-brand {
   margin-top: 100px;
  }
 
+ /* Home page footer */
+ .footer-bg{
+  background-color: #fff !important;
+ }
+ #footer-bottom{
+  border-bottom: 22px solid #D2D2D2;
+  width: 100%;
+  border-radius: 0px 0px 11px 11px;
+
+  
+ }
+
 
 
 /* Media query */
@@ -287,29 +308,29 @@ li.nav-item.navbar-brand {
   }
   #left-service .single-service::after{
 
-    bottom: -16px; /* Adjust this value to control the arrow position */
-    left: 96%; /* Position the arrow in the middle horizontally */
-    border-width: 50px 0 0 212px; /* Creates a triangle */
+    bottom: -16px;
+    left: 96%;
+    border-width: 50px 0 0 212px;
   }
   #left-service .single-service:hover::after{
 
-    bottom: -16px; /* Adjust this value to control the arrow position */
-    left: 96%; /* Position the arrow in the middle horizontally */
+    bottom: -16px;
+    left: 96%;
     
   }
   #right-service .single-service::after{
-    bottom: -35px; /* Adjust this value to control the arrow position */
-    right: 292px; /* Position the arrow in the middle horizontally */
-    border-width: 45px 0 0 207px; /* Creates a triangle */
+    bottom: -35px;
+    right: 292px; 
+    border-width: 45px 0 0 207px;
   }
   .service_h_line{
    margin-right: 660px;
  }
 
 #right-service .single-service:hover::after{
-  bottom: -35px; /* Adjust this value to control the arrow position */
-  right: 292px; /* Position the arrow in the middle horizontally */
-  border-width: 45px 0 0 207px; /* Creates a triangle */
+  bottom: -35px; 
+  right: 292px;
+  border-width: 45px 0 0 207px;
 }
 
 
@@ -320,51 +341,89 @@ li.nav-item.navbar-brand {
 
 #team-right .single-member::after{
 
-  bottom: -39px; /* Adjust this value to control the arrow position */
-  right: 74%; /* Position the arrow in the middle horizontally */
+  bottom: -39px; 
+  right: 74%;
 
 }
 
 #team-right .single-member:hover::after{
 
-  bottom: -39px; /* Adjust this value to control the arrow position */
-  right: 74%; /* Position the arrow in the middle horizontally */
+  bottom: -39px; 
+  right: 74%;
   
 }
 #team-left .single-member::after{
 
-  bottom: -15px; /* Adjust this value to control the arrow position */
-  left: 99%; /* Position the arrow in the middle horizontally */
+  bottom: -15px; 
+  left: 99%;
 }
 
 #team-left .single-member:hover::after{
-  bottom: -15px; /* Adjust this value to control the arrow position */
-  left: 99%; /* Position the arrow in the middle horizontally */
+  bottom: -15px; 
+  left: 99%;
 }
 /* for team page ends*/
 
 /* for nav menu bar */
-
 .nav-item:hover::after {
-  right: 39px;
+  /* right: 39px; */
+}
+.nav-item:hover::before {
+  border: 13px solid;
+  border-color: var(--primary-color) var(--primary-color) transparent transparent;
 }
 
 }
 
-
-
-
-@media only screen and (min-width: 769px) and (max-width: 990px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  
   body{
-    background-color: red;
+    /* background-color: pink; */
+   }
+   #team-right .single-member::after{
+
+    bottom: -39px; 
+    right: 346px;
   }
+  #team-right .single-member:hover::after{
+  
+    bottom: -39px; 
+    right: 346px;
+  }
+  .service-vline {
+    height: 270vh;
+  }
+  .service_h_line{
+    margin-right: 518px;
+  }
+  #right-service .single-service::after{
+    right: 247px;
+  }
+
+#right-service .single-service:hover::after{
+  right: 247px;
+}
+  
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  body{
+    /* background-color: green; */
+   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  
+ body{
+  /* background-color: red; */
+ }
 
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  
   body{
-    background-color: rgb(91, 224, 29);
-  }
-
+    /* background-color: yellow; */
+   }
 }
 
 /* Media query Ends */
