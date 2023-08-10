@@ -319,8 +319,8 @@ li.nav-item.navbar-brand {
     
   }
   #right-service .single-service::after{
-    bottom: -35px;
-    right: 292px; 
+    bottom: -34px;
+    right: 284px; 
     border-width: 45px 0 0 207px;
   }
   .service_h_line{
@@ -328,8 +328,8 @@ li.nav-item.navbar-brand {
  }
 
 #right-service .single-service:hover::after{
-  bottom: -35px; 
-  right: 292px;
+  bottom: -34px; 
+  right: 284px;
   border-width: 45px 0 0 207px;
 }
 
@@ -366,12 +366,20 @@ li.nav-item.navbar-brand {
 
 /* for nav menu bar */
 .nav-item:hover::after {
+  /* color: aqua; */
   /* right: 39px; */
 }
 .nav-item:hover::before {
   border: 13px solid;
   border-color: var(--primary-color) var(--primary-color) transparent transparent;
 }
+.nav-item:hover::before {
+  /* right: 35px;
+  bottom: -27px; */
+}
+body{
+  /* background-color: chartreuse; */
+ }
 
 }
 
@@ -411,6 +419,39 @@ li.nav-item.navbar-brand {
     /* background-color: green; */
     
    }
+   #team-right .single-member::after{
+    bottom: -38px; 
+    right: 257px;
+  }
+  #team-right .single-member:hover::after{
+  
+    bottom: -38px; 
+    right: 257px;
+  }
+  #right-service .single-service::after{
+    bottom: -24px;
+    right: 153px;
+  }
+
+#right-service .single-service:hover::after{
+  bottom: -24px;
+    right: 153px;
+}
+#left-service .single-service::after {
+  bottom: -5px;
+  left: 389px;
+}
+#left-service .single-service:hover::after{
+
+  bottom: -5px;
+  left: 389px;
+}
+.service-vline {
+  height: 1717px;
+}
+.service_h_line{
+  margin-right: 427px;
+}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
@@ -418,13 +459,125 @@ li.nav-item.navbar-brand {
  body{
   /* background-color: red; */
  }
+ #left-service .single-service::after {
+  bottom: -7px;
+  left: 270px;
+}
+#left-service .single-service:hover::after{
 
+  bottom: -7px;
+  left: 270px;
+}
+#right-service .single-service::after {
+  bottom: -26px;
+  right: 33px;
+}
+#right-service .single-service:hover::after{
+  bottom: -26px;
+    right: 33px;
+}
+#team-right .single-member::after {
+  bottom: -37px;
+  right: 135px;
+}
+#team-right .single-member:hover:after {
+  bottom: -37px;
+  right: 135px;
+}
+.team-vline {
+  height: 596px;
+}
+.service-vline {
+  height: 1580px;
+}
+#left-service .single-service h5 {
+  font-size: 1rem;
+}
+#left-service .single-service p {
+  font-size: 0.75rem;
+}
+#right-service .single-service h5 {
+  font-size: 1rem;
+}
+#right-service .single-service p {
+  font-size: 0.75rem;
+}
+.p-5 {
+  padding: 4rem!important;
+}
+.icon-bar {
+  top: 420px;
+}
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   
   body{
     /* background-color: yellow; */
    }
+   .team-vline {
+    height: 595px;
+}
+.service-vline {
+  height: 1600px;
+}
+#left-service .single-service h5 {
+  font-size: 1rem;
+}
+#left-service .single-service p {
+  font-size: 0.75rem;
+}
+#right-service .single-service h5 {
+  font-size: 1rem;
+}
+#right-service .single-service p {
+  font-size: 0.75rem;
+}
+#left-service .single-service::after {
+  bottom: -6px;
+  left: 270px;
+}
+#left-service .single-service:hover:after {
+  bottom: -6px;
+  left: 270px;
+}
+#right-service .single-service::after {
+  bottom: -26px;
+  right: 36px;
+}
+#right-service .single-service:hover:after {
+  bottom: -26px;
+  right: 36px;
+}
+#team-right .single-member::after {
+  bottom: -37px;
+  right: 137px;
+}
+#team-right .single-member:hover::after {
+  bottom: -37px;
+  right: 137px;
+}
+#team-left .single-member::after {
+  bottom: -14px;
+  left: 289px;
+}
+#team-left .single-member:hover::after {
+  bottom: -14px;
+  left: 289px;
+}
+ .main-navbar ul li a {
+  font-size: 13px;
+}
+
+.nav-item .nav-link {
+  padding: 10px;
+} 
+
+}
+@media only screen and (min-width : 320px) and (max-width: 480px) {
+        body{
+
+          /* background-color: violet; */
+        }
 }
 
 /* Media query Ends */
